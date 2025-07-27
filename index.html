@@ -6,11 +6,42 @@
   <title>Eat & Go</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .brand-logo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #ffd700;
+      font-style: italic;
+      letter-spacing: 2px;
+      margin-right: 40px;
+      margin-left: 10px;
+      text-shadow: 1px 2px 8px #00000070;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      white-space: nowrap;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      justify-content: flex-start;
+    }
+    @media (max-width: 700px) {
+      .brand-logo {
+        font-size: 1.2rem;
+        margin-right: 10px;
+        margin-left: 2px;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
+    <span class="brand-logo">Eat & Go</span>
     <a href="#">Home</a>
     <a href="#about">About Us</a>
     <a href="#menu">Menu</a>
@@ -40,9 +71,6 @@
         <p>
           Our chefs craft each dish using fresh, locally sourced ingredients, bringing together global flavors and local favorites. Whether you’re here for a quick lunch, a family dinner, or a special celebration, you’ll find something to love on our diverse menu.
         </p>
-        <p>
-          At Eat&amp;Go, we believe in more than just great food. We’re passionate about creating memorable experiences — from our friendly staff and inviting ambiance to our carefully curated music and art. Join us and discover why Eat&amp;Go is more than a restaurant; it’s your new favorite gathering place.
-        </p>
       </div>
       <div class="about-image">
         <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg" alt="Eat&Go Interior">
@@ -54,6 +82,7 @@
   <section id="menu" class="section">
     <h2 class="section-title">Our Menu</h2>
 
+    <!-- Vegetarian Delights -->
     <h3>🍃 Vegetarian Delights</h3>
     <div class="menu-items">
       <div class="menu-item">
@@ -80,8 +109,34 @@
         <p>Fragrant basmati rice layered with seasonal vegetables, caramelized onions, and aromatic spices, cooked in the traditional dum style</p>
         <p class="price">₹249</p>
       </div>
+      <!-- Added Vegetarian Items -->
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/03/pav-bhaji-recipe-1.jpg" alt="Pav Bhaji" class="menu-item-img">
+        </div>
+        <h4>Pav Bhaji</h4>
+        <p>Spicy mashed vegetable curry served with butter-toasted pav buns, onions, and lemon</p>
+        <p class="price">₹159</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/dal-makhani-1.jpg" alt="Dal Makhani" class="menu-item-img">
+        </div>
+        <h4>Dal Makhani</h4>
+        <p>Creamy black lentils slow-cooked with butter, cream, and aromatic spices, served with naan</p>
+        <p class="price">₹189</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/hakka-noodles-1.jpg" alt="Veg Hakka Noodles" class="menu-item-img">
+        </div>
+        <h4>Veg Hakka Noodles</h4>
+        <p>Stir-fried noodles tossed with mixed vegetables and soy sauce in Indo-Chinese style</p>
+        <p class="price">₹179</p>
+      </div>
     </div>
 
+    <!-- Non-Vegetarian Specials -->
     <h3>🍗 Non-Vegetarian Specials</h3>
     <div class="menu-items">
       <div class="menu-item">
@@ -108,8 +163,34 @@
         <p>Crispy beer-battered cod fingers served with homemade tartar sauce, lemon wedges, and a side of fries</p>
         <p class="price">₹329</p>
       </div>
+      <!-- Added Non-Veg Items -->
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/chicken-biryani-recipe.jpg" alt="Chicken Biryani" class="menu-item-img">
+        </div>
+        <h4>Chicken Biryani</h4>
+        <p>Classic Hyderabadi-style biryani with marinated chicken, fragrant basmati rice, and fried onions</p>
+        <p class="price">₹349</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/fish-curry-recipe.jpg" alt="Fish Curry" class="menu-item-img">
+        </div>
+        <h4>Fish Curry</h4>
+        <p>Fresh fish cooked in a tangy coconut-based curry, served with steamed rice</p>
+        <p class="price">₹299</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/01/Chicken-Tikka-Recipe.jpg" alt="Chicken Tikka" class="menu-item-img">
+        </div>
+        <h4>Chicken Tikka</h4>
+        <p>Juicy chicken chunks marinated in yogurt and spices, grilled to perfection in our clay oven</p>
+        <p class="price">₹359</p>
+      </div>
     </div>
 
+    <!-- Chef's Specials -->
     <h3>⭐ Chef's Specials</h3>
     <div class="menu-items">
       <div class="menu-item">
@@ -135,6 +216,31 @@
         <h4>Red Velvet Cake</h4>
         <p>Our namesake dessert - moist red velvet layers with cream cheese frosting and edible gold leaf garnish</p>
         <p class="price">₹199</p>
+      </div>
+      <!-- Added Chef's Specials -->
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.xHrR4gCAYvffmpab3zsxqgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chocolate Lava Cake" class="menu-item-img">
+        </div>
+        <h4>Chocolate Lava Cake</h4>
+        <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream</p>
+        <p class="price">₹179</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://i.ytimg.com/vi/Sehr3grslF0/maxresdefault.jpg" alt="Mango Cheesecake" class="menu-item-img">
+        </div>
+        <h4>Mango Cheesecake</h4>
+        <p>Creamy no-bake cheesecake with fresh mango puree on a buttery biscuit crust</p>
+        <p class="price">₹199</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-img-container">
+          <img src="https://i.pinimg.com/originals/07/f0/41/07f041d41979599297efd5886182961e.jpg" alt="Mocha Frappe" class="menu-item-img">
+        </div>
+        <h4>Mocha Frappe</h4>
+        <p>Chilled chocolate-coffee blended drink topped with whipped cream and cocoa dust</p>
+        <p class="price">₹169</p>
       </div>
     </div>
   </section>
